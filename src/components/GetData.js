@@ -32,18 +32,19 @@ class GetData extends Component {
                 const sneaker = data.data.results;
                 console.log(sneaker);
                 sneaker.forEach(kick => {
-                    const sneakerObject = {
-                        brand: sneaker.brand,
-                        colorway: sneaker.colorway,
-                        gender: sneaker.gender,
-                        title: sneaker.title,
-                        releaseDate: sneaker.releaseDate,
-                        year: sneaker.year,
-                        // image: sneaker.media.imageUrl,
+                    if(kick.brand !== '' && kick.gender !== '') {
+                        const sneakerObject = {
+                            brand: kick.brand,
+                            colorway: kick.colorway,
+                            gender: kick.gender,
+                            title: kick.title,
+                            releaseDate: kick.releaseDate,
+                            year: kick.year,
+                            // image: kick.media.imageUrl,
+                        }
+                        arrayOfSneakers.push(sneakerObject);
                     }
-                    arrayOfSneakers.push(sneakerObject);
                 });
-
                 this.setState({
                     sneakerInfo: arrayOfSneakers
                 })
@@ -51,15 +52,17 @@ class GetData extends Component {
     }
 
     render() {
+        const { sneakerInfo } = this.state;
+
         return(
             <div className="sneakerSlider">
                 <div className="sneakerInfo">
-                    <h3>{ this.state.sneakerInfo.brand }</h3>
-                    <p>{ this.state.sneakerInfo.colorway }</p>
-                    <p>{ this.state.sneakerInfo.gender }</p>
-                    <p>{ this.state.sneakerInfo.title }</p>
-                    <p>{ this.state.sneakerInfo.releaseDate }</p>
-                    <p>{ this.state.sneakerInfo.year }</p>
+                    <h3>{ sneakerInfo.brand }</h3>
+                    <p>{ sneakerInfo.colorway }</p>
+                    <p>{ sneakerInfo.gender }</p>
+                    <p>{ sneakerInfo.title }</p>
+                    <p>{ sneakerInfo.releaseDate }</p>
+                    <p>{ sneakerInfo.year }</p>
                 </div>
 
                 {/* <div className="sneakerImg">

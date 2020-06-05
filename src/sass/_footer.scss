@@ -1,0 +1,17 @@
+/* Footer Styles Starts Here */
+footer {
+	background: #000;
+	.wrapper {
+		min-height: 5vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		p {
+			font-size: 1.8rem;
+			color: red;
+		}
+		.white {
+			color: #fff;
+		}
+	}
+}

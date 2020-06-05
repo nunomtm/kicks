@@ -1,0 +1,46 @@
+html {
+	font-size: 65.2%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+	max-width: 1280px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+a {
+	margin: 0;
+	padding: 0;
+}
+
+/* Skip-line for accessibility */
+.skipLink {
+	position: absolute;
+	left: -1000px;
+	top: 5px;
+	z-index: 999;
+	background: #000;
+	color: #000;
+}
+
+.skipLink:focus {
+	left: 0;
+}
+/* - */

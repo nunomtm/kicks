@@ -1,0 +1,21 @@
+/* Hero Styles Start Here */
+.heroContainer {
+	min-height: 95vh;
+	background-color: #333;
+	h2 {
+		font-size: 2rem;
+		color: #fff;
+		text-align: center;
+		padding-top: 30px;
+	}
+	.sneakerInfo {
+		h3 {
+			font-size: 1.8rem;
+			color: #fff;
+		}
+		p {
+			font-size: 1.4rem;
+			color: #fff;
+		}
+	}
+}
