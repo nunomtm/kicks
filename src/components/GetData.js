@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
+// import placeholderImage from '../assets/placeholderImage.png';
 
 const api = {
     baseUrl: 'https://api.thesneakerdatabase.com'
@@ -19,7 +20,7 @@ class GetData extends Component {
                     title: '',
                     releaseDate: '',
                     year: '',
-                    image: '',
+                    // image: '',
                 }
             ]
         }
@@ -29,10 +30,14 @@ class GetData extends Component {
         axios.get(`${api.baseUrl}/v1/sneakers?limit=20&brand=jordan`)
             .then(data => {
                 let arrayOfSneakers = [];
+
                 const sneaker = data.data.results;
-                console.log(sneaker);
+                // console.log(sneaker);
                 sneaker.forEach(kick => {
                     if(kick.brand !== '' && kick.gender !== '') {
+                        // if(kick.image === undefined) {
+                        //     kick.image = placeholderImage
+                        // }
                         const sneakerObject = {
                             brand: kick.brand,
                             colorway: kick.colorway,
