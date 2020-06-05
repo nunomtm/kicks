@@ -1,38 +1,367 @@
-.App {
-  text-align: center;
+html {
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	margin: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+	display: block;
+}
+h1 {
+	font-size: 2em;
+	margin: .67em 0;
+}
+figcaption,
+figure,
+main {
+	display: block;
+}
+figure {
+	margin: 1em 40px;
+}
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+pre {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+a {
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
+}
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted;
+}
+b,
+strong {
+	font-weight: inherit;
+}
+b,
+strong {
+	font-weight: bolder;
+}
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+dfn {
+	font-style: italic;
+}
+mark {
+	background-color: #ff0;
+	color: #000;
+}
+small {
+	font-size: 80%;
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sub {
+	bottom: -.25em;
+}
+sup {
+	top: -.5em;
+}
+audio,
+video {
+	display: inline-block;
+}
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+img {
+	border-style: none;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: sans-serif;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+button,
+input {
+	overflow: visible;
+}
+button,
+select {
+	text-transform: none;
+}
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+	-webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+fieldset {
+	padding: .35em .75em .625em;
+}
+legend {
+	box-sizing: border-box;
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	padding: 0;
+	white-space: normal;
+}
+progress {
+	display: inline-block;
+	vertical-align: baseline;
+}
+textarea {
+	overflow: auto;
+}
+[type=checkbox],
+[type=radio] {
+	box-sizing: border-box;
+	padding: 0;
+}
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+	height: auto;
+}
+[type=search] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+details,
+menu {
+	display: block;
+}
+summary {
+	display: list-item;
+}
+canvas {
+	display: inline-block;
+}
+template {
+	display: none;
+}
+[hidden] {
+	display: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: '';
+	clear: both;
+	height: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
 
-.App-link {
-  color: #61dafb;
+.visuallyhidden:not(:focus):not(:active) {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(00 0 0);
+	overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* My styles start here */
+
+/* Global Styles */
+html {
+	font-size: 65.2%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+	max-width: 1280px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+a {
+	margin: 0;
+	padding: 0;
+}
+
+/* Skip-line for accessibility */
+.skipLink {
+	position: absolute;
+	left: -1000px;
+	top: 5px;
+	z-index: 999;
+	background: #000;
+	color: #000;
+}
+
+.skipLink:focus {
+	left: 0;
+}
+/* - */
+
+/* End of Global Styles */
+
+header {
+	background-color: #000;
+}
+
+.navContainer {
+	height: 5vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logoContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logoContainer h1 {
+	font-size: 2rem;
+	color: red;
+	padding-left: 5px;
+}
+
+.logoContainer .logo {
+	height: 35px;
+	width: 35px;
+}
+
+.navLinks {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+}
+
+.navLinks li {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	list-style: none;
+	padding: 0 30px;
+	cursor: pointer;
+	transition: all 0.35s ease-in-out;
+}
+
+.navLinks li:hover {
+	color: red;
+}
+
+/* Hero Styles Start Here */
+.heroContainer {
+	min-height: 95vh;
+	background-color: #333;
+}
+
+.heroContainer h2 {
+	font-size: 2rem;
+	color: #fff;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.sneakerInfo h3 {
+	font-size: 1.8rem;
+	color: #fff;
+}
+
+.sneakerInfo p {
+	font-size: 1.4rem;
+	color: #fff;
+}
+
+/* Footer Styles Starts Here */
+footer {
+	background: #000;
+}
+
+footer .wrapper {
+	min-height: 5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer .wrapper p {
+	font-size: 1.8rem;
+	color: red;
+}
+footer .wrapper .white {
+	color: #fff;
 }
