@@ -29,10 +29,11 @@ class GetData extends Component {
     componentDidMount() {
         axios.get(`${api.baseUrl}/v1/sneakers?limit=20&brand=jordan`)
             .then(data => {
+                const sneaker = data.data.results;
+                console.log(sneaker);
+                
                 let arrayOfSneakers = [];
 
-                const sneaker = data.data.results;
-                // console.log(sneaker);
                 sneaker.forEach(kick => {
                     if(kick.brand !== '' && kick.gender !== '') {
                         // if(kick.image === undefined) {

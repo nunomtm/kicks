@@ -5,7 +5,7 @@ import Hero from './components/Hero';
 // import Main from './components/Main';
 import Footer from './components/Footer'
 
-import './styles/App.css';
+import './sass/App.css';
 
 
 class App extends Component {
@@ -23,7 +23,7 @@ class App extends Component {
                 <Header />
                 <Hero />
                 {/* <Main /> */}
-                
+
                 <Footer />
             </div>
         );
