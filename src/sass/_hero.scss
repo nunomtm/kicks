@@ -7,15 +7,43 @@
 		color: #fff;
 		text-align: center;
 		padding-top: 30px;
-	}
-	.sneakerInfo {
-		h3 {
-			font-size: 1.8rem;
-			color: #fff;
+		span {
+			font-size: 2.2rem;
+			font-style: italic;
+			color: red;
 		}
-		p {
-			font-size: 1.4rem;
-			color: #fff;
+	}
+	.sneakerSlider {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, min-content);
+		margin-top: 30px;
+		.sneakerContainer {
+			padding: 20px 0;
+			.sneakerImg {
+				width: 200px;
+				height: 200px;
+				border: 2px solid #fff;
+				box-shadow: 5px 5px 5px;
+				margin: 0 auto;
+			}
+			.sneakerInfo {
+				width: 100%;
+				margin-top: 20px;
+				h3 {
+					font-size: 2rem;
+					color: #fff;
+				}
+				p {
+					font-size: 1.3rem;
+					line-height: 1.5;
+					color: #fff;
+					span {
+						font-size: 1.5rem;
+						color: red;
+					}
+				}
+			}
 		}
 	}
 }
