@@ -450,6 +450,69 @@ header .navContainer nav .navLinks li:hover {
   color: red;
 }
 
+.mainContainer {
+  min-height: 95vh;
+  background-color: #000;
+}
+
+.mainContainer h2 {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.mainContainer h2 span {
+  font-size: 2.2rem;
+  font-style: italic;
+  color: red;
+}
+
+.mainContainer .sneakerSlider {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (min-content)[2];
+      grid-template-rows: repeat(2, -webkit-min-content);
+      grid-template-rows: repeat(2, min-content);
+  margin-top: 30px;
+}
+
+.mainContainer .sneakerSlider .sneakerContainer {
+  padding: 20px 0;
+}
+
+.mainContainer .sneakerSlider .sneakerContainer .sneakerImg {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 5px 5px 5px;
+          box-shadow: 5px 5px 5px;
+  margin: 0 auto;
+}
+
+.mainContainer .sneakerSlider .sneakerContainer .sneakerInfo {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.mainContainer .sneakerSlider .sneakerContainer .sneakerInfo h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.mainContainer .sneakerSlider .sneakerContainer .sneakerInfo p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.mainContainer .sneakerSlider .sneakerContainer .sneakerInfo p span {
+  font-size: 1.5rem;
+  color: red;
+}
+
 /* Footer Styles Starts Here */
 footer {
   background: #000;

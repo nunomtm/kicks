@@ -1,12 +1,14 @@
 import React from 'react'
+import GetData from './GetData'
 
 function Main() {
     return (
         <section>
-            <h2>Up Coming</h2>
-
-            <div>
-                
+            <div className="mainContainer">
+                <h2>Up Coming</h2>
+                <div className="wrapper">
+                    <GetData />
+                </div>
             </div>
         </section>
     )
