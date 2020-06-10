@@ -12,15 +12,13 @@ class GetData extends Component {
         super()
         this.state = {
             sneakerInfo: {
-                // {
-                    brand: '',
-                    colorway: '',
-                    gender: '',
-                    title: '',
-                    releaseDate: '',
-                    year: '',
-                    image: '',
-                // }
+                brand: '',
+                colorway: '',
+                gender: '',
+                title: '',
+                releaseDate: '',
+                year: '',
+                image: '',
             },
             randomSneakerInfo: {}
         }
@@ -46,7 +44,7 @@ class GetData extends Component {
                             title: kick.title,
                             releaseDate: kick.releaseDate,
                             year: kick.year,
-                            image: kick.media.imageUrl,
+                            image: kick.media.image,
                         }
                         arrayOfSneakers.push(sneakerObject);
                     }
